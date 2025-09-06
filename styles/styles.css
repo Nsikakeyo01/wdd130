@@ -20,7 +20,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    /* Add any other existing styles for main img here */
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -31,4 +33,28 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: #fff;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+h1 {
+    color: #00698f;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
