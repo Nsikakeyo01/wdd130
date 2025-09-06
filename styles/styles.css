@@ -1,15 +1,15 @@
 main {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 840px;
 }
 
 aside {
-    width: 30%;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: #f7f7f7;
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
     color: #333;
+    text-align: center;
 }
 
 aside img {
@@ -20,7 +20,7 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    /* existing styles */
+    /* Add any other existing styles for main img here */
 }
 
 p {
@@ -28,7 +28,7 @@ p {
 }
 
 footer {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
 }
