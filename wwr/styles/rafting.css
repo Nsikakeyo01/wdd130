@@ -1,125 +1,137 @@
-/* Root color variables */
 :root {
-  --primary-color: #264653;
-  --secondary-color: #E9C46A;
-  --background-color: #FFF;
-  --accent-color: #055A05;
+  --primary-color: #055a05; /* dark green */
+  --secondary-color: #f4a261; /* warm sand */
+  --accent1-color: #264653; /* slate */
+  --accent2-color: #e9c46a; /* golden yellow */
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Global styles */
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* Reset */
+* {
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--primary-color);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #fff;
   line-height: 1.6;
 }
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
+/* Layout width */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
 }
 
-a:hover {
-  color: var(--secondary-color);
-}
-
-/* Header styles */
+/* Header */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: var(--accent-color);
-  padding: 10px 20px;
-  color: white;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 12px 20px;
 }
 
-.logo {
-  height: 50px;
+header img {
+  height: 60px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding-left: 0;
-  margin: 0;
 }
 
 nav ul li a {
-  color: white;
+  color: var(--accent2-color);
+  text-decoration: none;
   font-weight: bold;
 }
 
-/* Main content */
-main {
-  padding: 20px;
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Hero section */
 .hero {
   position: relative;
-  max-width: 100%;
-  height: 400px;
-  overflow: hidden;
-  margin-bottom: 30px;
+  margin-top: 16px;
 }
 
 .hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
+  width: 100%;
+  height: auto;
 }
 
-.hero h1,
-.hero article {
+.hero h1 {
   position: absolute;
   top: 20px;
-  left: 30px;
-  color: white;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-  max-width: 40%;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  background: rgba(38, 70, 83, 0.7); /* semi-transparent slate */
+  color: #fff;
+  font-family: var(--heading-font);
+  font-size: 2rem;
 }
 
+/* Article overlay */
 .hero article {
-  top: 80px;
-  font-size: 1.1rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(233, 196, 106, 0.9);
+  padding: 16px;
+  border-radius: 8px;
 }
 
-/* Image float inside hero article if needed */
-/* Assuming there is an image inside article that floats right */
 .hero article img {
   float: right;
-  margin-left: 15px;
-  max-width: 120px;
-  height: auto;
+  width: 120px;
+  margin-left: 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Section styles */
+/* Sections */
 section {
-  margin-bottom: 30px;
+  margin: 20px;
 }
 
-section img {
-  float: right;
-  margin-left: 15px;
-  max-width: 200px;
-  height: auto;
-  border-radius: 5px;
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 8px;
 }
 
-section h2 {
-  color: var(--accent-color);
-}
-
-/* Footer styles */
+/* Footer */
 footer {
-  background-color: var(--accent-color);
-  color: white;
   text-align: center;
-  padding: 20px 10px;
-  margin
+  padding: 16px;
+  background: var(--primary-color);
+  color: var(--accent2-color);
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.socialmedia img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
