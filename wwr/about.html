@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about the mission, history, and adventures of White Water Rafting Co.">
+    <meta name="description" content="Discover the mission and thrilling history of White Water Rafting Co. Join unforgettable river adventures that bring people together through excitement and nature.">
     <meta name="author" content="Nsikak Eyo">
-    <title>About Us – White Water Rafting Co</title>
+    <title>Our Story | About White Water Rafting Co</title>
     <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header>
-        <img src="images/logo.jpeg" alt="Rafting Company Logo" class="logo">
+        <a href="index.html">
+            <img src="images/logo.jpeg" alt="Rafting Company Logo" class="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,79 +29,101 @@
         </nav>
     </header>
 
-    <main>
-        <div class="hero">
-            <figure>
-                <img src="images/2.jpg" alt="Rafting Adventure on the River">
-                <figcaption>Rafting through wild waters – an adventure you'll never forget.</figcaption>
-            </figure>
-            <h1>White Water Rafting Co</h1>
+    <main id="main-content">
+        <section class="hero">
+            <img src="images/2.jpg" alt="Group navigating white water rapids">
+            <h1>White Water Rafting Co.</h1>
             <article>
-                <figure>
-                    <img src="images/nigeria.jpg" alt="Happy rafting client">
-                    <figcaption>One of our happy clients enjoying a scenic rafting journey.</figcaption>
-                </figure>
+                <img src="images/3.jpg" alt="Rafting client smiling after trip on the river">
                 <p>
                     Our mission is to bring adventure, excitement, and unforgettable memories
                     to every rafting trip. Join us as we explore the rivers and create lasting bonds.
                 </p>
             </article>
-        </div>
+        </section>
 
-        <section>
+        <section class="history">
             <h2>History</h2>
             <p>
                 Established in 1995, White Water Rafting Co. has been guiding adventurers
                 through some of the most thrilling rivers in the country. From humble beginnings,
                 we’ve grown into one of the most trusted rafting companies.
             </p>
-            <figure>
-                <img src="images/2.jpg" alt="Rafting through rough waters">
-                <figcaption>Our early days – navigating challenging rivers with courage.</figcaption>
-            </figure>
         </section>
 
-        <section>
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <p>
-                Whether you're a beginner or an expert, our trips cater to all skill levels.
-                Gear up for an unforgettable adventure on the water!
-            </p>
-            <figure>
-                <img src="images/nigeria.jpg" alt="Smiling clients after rafting">
-                <figcaption>Clients celebrating an exhilarating rafting experience.</figcaption>
-            </figure>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/11.jpeg" alt="Rafting through Los Dientes del Diablo rapids">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/22.jpeg" alt="Raft crashing through Big Mallard Rapids">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/33.jpeg" alt="Rafters enjoying a Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/44.jpeg" alt="Rafters paddling on a Full Day Expedition">
+                    <figcaption>Full Day Expedition</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/55.jpeg" alt="Rafting group during a Sunset Float">
+                    <figcaption>Sunset Float</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
     <footer>
         <nav class="socialmedia" aria-label="Social Media Links">
-            <figure>
-                <img src="images/facebook.png" alt="Facebook Icon">
-                <figcaption>Follow us on Facebook</figcaption>
-            </figure>
-            <figure>
-                <img src="images/instagram.png" alt="Instagram Icon">
-                <figcaption>See rafting highlights on Instagram</figcaption>
-            </figure>
-            <figure>
-                <img src="images/youtube.jpeg" alt="YouTube Icon">
-                <figcaption>Watch our adventures on YouTube</figcaption>
-            </figure>
-            <figure>
-                <img src="images/tiktok.png" alt="TikTok Icon">
-                <figcaption>Short rafting clips on TikTok</figcaption>
-            </figure>
-            <figure>
-                <img src="images/twitter.png" alt="Twitter Icon">
-                <figcaption>Tweet with us @RaftingCo</figcaption>
-            </figure>
-            <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/whatsapp.png" alt="WhatsApp Icon">
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin.png" alt="LinkedIn Icon">
-            </a>
+            <ul>
+                <li>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                        <img src="images/facebook.png" alt="Facebook Icon">
+                        <span>Follow us on Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="See rafting highlights on Instagram">
+                        <img src="images/instagram.png" alt="Instagram Icon">
+                        <span>See rafting highlights on Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch our adventures on YouTube">
+                        <img src="images/youtube.jpeg" alt="YouTube Icon">
+                        <span>Watch our adventures on YouTube</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Short rafting clips on TikTok">
+                        <img src="images/tiktok.png" alt="TikTok Icon">
+                        <span>Short rafting clips on TikTok</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/RaftingCo" target="_blank" rel="noopener noreferrer" aria-label="Tweet with us on Twitter">
+                        <img src="images/twitter.png" alt="Twitter Icon">
+                        <span>Tweet with us @RaftingCo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+                        <img src="images/whatsapp.png" alt="WhatsApp Icon">
+                        <span>Chat with us on WhatsApp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
+                        <img src="images/linkedin.png" alt="LinkedIn Icon">
+                        <span>Connect with us on LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
         <p>© 2025 White Water Rafting Co | Nsikak Eyo</p>
     </footer>
