@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - White Water Rafting Co.</title>
   <meta name="description" content="Get in touch with White Water Rafting Co. for questions, reservations, and feedback." />
-  <meta name="author" content="Nsikak Eyo"/>
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <meta name="author" content="Nsikak Eyo">
+  <link rel="stylesheet" href="styles/rafting.css"/>
 </head>
 <body>
   <header>
@@ -37,7 +37,6 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.929985135497!2d8.312325215320331!3d4.95161359502779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106a0b1d9933c9f1%3A0x4d414fbb153ea1b!2sCalabar%2C%20Cross%20River%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1695745678901!5m2!1sen!2sng"
             width="100%"
             height="300"
-            style="border:0;"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -56,18 +55,22 @@
 
             <fieldset>
               <legend>Message Purpose:</legend>
-              <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label><br />
-              <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label><br />
-              <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+
+              <input type="radio" id="purpose-general" name="purpose" value="general" required />
+              <label for="purpose-general">General Inquiry</label><br />
+
+              <input type="radio" id="purpose-reservation" name="purpose" value="reservation" />
+              <label for="purpose-reservation">Reservation Question</label><br />
+
+              <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion" />
+              <label for="purpose-suggestion">Website Suggestion</label>
             </fieldset>
 
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <label>
-              <input type="checkbox" id="newsletter" name="newsletter" />
-              Please subscribe me to the monthly newsletter
-            </label>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
 
             <button type="submit">Get in Touch!</button>
           </form>

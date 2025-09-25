@@ -54,6 +54,11 @@ h1, h2 {
   min-width: 300px;
 }
 
+/* Remove border from iframe using CSS */
+.map-container iframe {
+  border: 0;
+}
+
 .contact-form form {
   display: flex;
   flex-direction: column;
