@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - White Water Rafting Co.</title>
-  <meta name="description" content="Get in touch with White Water Rafting Co. for questions, reservations, and feedback." />
-  <meta name="author" content="Nsikak Eyo">
-  <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact White Water Rafting Company for inquiries, reservations, or suggestions.">
+    <meta name="author" content="Nsikak Eyo">
+    <title>Contact Us - White Water Rafting Co.</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
-  <header>
-    <h1>White Water Rafting Co.</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section class="contact-header">
-      <h2>White Water Rafting Company</h2>
-      <p>123 Riverbank Lane, Mountain Town, CO 80439</p>
-      <p>Phone: <a href="tel:+2348089116838">(+234) 8089-116838</a></p>
-      <p>Email: <a href="mailto:info@whiteriverrafting.com">info@whiteriverrafting.com</a></p>
-    </section>
-
-    <section class="contact-section">
-      <h2>Contact Form & Map</h2> <!-- Added heading here -->
-      <div class="contact-container">
-        <!-- LEFT: Map -->
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.929985135497!2d8.312325215320331!3d4.95161359502779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106a0b1d9933c9f1%3A0x4d414fbb153ea1b!2sCalabar%2C%20Cross%20River%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1695745678901!5m2!1sen!2sng"
-            height="300"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Map showing White Water Rafting Co. location"
-          ></iframe>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Rafting Company Logo">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- RIGHT: Contact Form -->
-        <div class="contact-form">
-          <form action="#" method="post" novalidate>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <main>
+        <h1>White Water Rafting Company</h1>
+        <address>
+            123 Main River Street<br>
+            Kolob, California<br>
+            +1 999 999 9999<br>
+            <a href="mailto:info@whitewater.com">info@whitewater.com</a>
+        </address>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact-section">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019785098509!2d-122.4194156846819!3d37.77492977975956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzMwLjAiTiAxMjLCsDI1JzA3LjkiVw!5e0!3m2!1sen!2sus!4v1610000000000"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-            <fieldset>
-              <legend>Message Purpose:</legend>
-              <label><input type="radio" id="purpose-general" name="purpose" value="general" required /> General Inquiry</label><br/>
-              <label><input type="radio" id="purpose-reservation" name="purpose" value="reservation" /> Reservation Question</label><br/>
-              <label><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion" /> Website Suggestion</label>
-            </fieldset>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-            <label for="newsletter">
-              <input type="checkbox" id="newsletter" name="newsletter">
-              Please subscribe me to the monthly newsletter
-            </label>
+                <p>Message Purpose:</p>
+                <label for="purpose-general">
+                    <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
+                </label>
+                <label for="purpose-reservation">
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation
+                    Question
+                </label>
+                <label for="purpose-website">
+                    <input type="radio" id="purpose-website" name="purpose" value="website"> Website Suggestion
+                </label>
 
-            <button type="submit">Get in Touch!</button>
-          </form>
-        </div>
-      </div>
-    </section>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type here..."></textarea>
 
-    <section class="employees">
-      <h2>We Are Here to Serve You</h2>
-      <div class="employee-grid">
-        <figure>
-          <img src="images/images1c.jpeg" alt="Jane Smith - Lead Guide">
-          <figcaption>Jane Smith - Lead Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/images1b.jpeg" alt="John Doe - Operations Manager">
-          <figcaption>John Doe - Operations Manager</figcaption>
-        </figure>
-        <figure>
-          <img src="images/images1a.jpeg" alt="Emily Johnson - Customer Service">
-          <figcaption>Emily Johnson - Customer Service</figcaption>
-        </figure>
-      </div>
-    </section>
-  </main>
+                <label for="subscribe" class="newsletter">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
 
-  <footer>
-    <p>&copy; 2025 White Water Rafting Co. All rights reserved.</p>
-    <ul class="social-links">
-      <li><a href="#"><img src="images/facebook.png" alt="Facebook Icon"></a></li>
-      <li><a href="#"><img src="images/twitter.png" alt="Twitter Icon"></a></li>
-      <li><a href="#"><img src="images/instagram.png" alt="Instagram Icon"></a></li>
-      <li><a href="#"><img src="images/linkedin.png" alt="LinkedIn Icon"></a></li>
-      <li><a href="#"><img src="images/youtube.jpeg" alt="YouTube Icon"></a></li>
-    </ul>
-  </footer>
+                <button type="submit" class="btn">Get in Touch!</button>
+            </form>
+        </section>
+
+        <!-- ===== EMPLOYEE PROFILES ===== -->
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/images1a.jpeg" alt="Employee 1 headshot">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/images1b.jpeg" alt="Employee 2 headshot">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/images1c.jpeg" alt="Employee 3 headshot">
+                    <figcaption>Employee Profile</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2024 White Water Rafting Adventures | Nsikak Eyo</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Follow White Water Rafting Company on Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="Connect with White Water Rafting Company on LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="See White Water Rafting adventures on Instagram">
+            </a>
+            <a href="https://whatsapp.com">
+                <img src="images/whatsapp.png" alt="Chat with White Water Rafting Company on WhatsApp">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="Follow White Water Rafting Company on Twitter">
+            </a>
+            <a href="https://telegram.org">
+                <img src="images/telegram.png" alt="Join the White Water Rafting Company Telegram group">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube.jpeg" alt="Watch White Water Rafting Company videos on YouTube">
+            </a>
+        </nav>
+    </footer>
+
 </body>
+
 </html>
